@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './pages/bootstrap.min.css'
-import './pages/Home.css'
+import 'antd'
 import Home from './pages/Home'
+import './pages/Home.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
 

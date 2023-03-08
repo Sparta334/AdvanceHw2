@@ -1,14 +1,15 @@
-import Header from "../components/Header"
+import HeaderItem from "../components/HeaderItem"
 import ProductList from "../components/ProductList";
 import Article from "../components/Article";
 import Footer from "../components/footer";
+import Layout from "antd/es/layout/layout";
 
 function Home(){
 
     return (
         
-        <div className="container">
-            <Header
+        <Layout>
+            <HeaderItem
                 Name="Ian"
                 Slogan="I am so handsome" 
             />
@@ -23,8 +24,7 @@ function Home(){
             
             />
 
-
-        </div>
+        </Layout>
 
     );
 

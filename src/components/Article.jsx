@@ -2,8 +2,8 @@
 export default function Article(){
 
     return(
-        <article class="description__layout py-4 py-sm-5">
-            <div class="container d-flex flex-column align-items-center">
+        <article class="description__layout">
+            <div class="container">
             <h1>DESCRIPTIONS</h1>
             <hr class="divider--light"/>
             <p class="text-justify description__content py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum

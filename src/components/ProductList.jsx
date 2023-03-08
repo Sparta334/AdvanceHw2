@@ -1,28 +1,40 @@
 
 import products from '../Data/product.json'
+import {Row , Col} from "antd"
+import { Content } from 'antd/es/layout/layout';
 
 export default function ProductList( {IMAGES} ){
 
     return(
-        <div>
-            <article class="image__layout py-3 py-sm-5">
-                <div class="container">
-                    <h1 class="text-center">{IMAGES} </h1>
-                    <hr class="divider--dark"/>
-                    <div className="row">
+            <Content className="image__layout">
+                    <Row  gutter={[8, 10]} justify="center" >
+
+                        <Col xxl={24}>
+                            <h1 className="text-center">{IMAGES} </h1>
+                        </Col>
+                        <Col span={24}>
+                            <hr className="divider--dark"/>
+                        </Col>
+                    </Row>
+                    <Row gutter={[8, 10]}>
 
                         {
                             products.map( product=>
                                 
-                                <section key = { product.id }>
+                                <Col key = { product.id } 
+                                    sm = {{span:12}}
+                                    lg = {{span: 8}}
+                                    xl = {{span :6}}
+                                    xxl = {{span:4}}
+                                >
                                     
-                                    <div className="image mt-4 col-sm-6 col-lg-3">
+                                    <div className="image">
                                     <a href="" className="image__link">
                                         <img src={product.image} alt="" className="image__style"/>
                                     </a>
                                     <p className="image_title">{product.image_title}</p>
                                     </div>
-                                </section>
+                                </Col>
                                 
                             )
                         
@@ -30,11 +42,9 @@ export default function ProductList( {IMAGES} ){
                         }
 
 
-                    </div>
-                </div>
+                    </Row>
                 
-            </article>
-        </div> 
+            </Content> 
     );
 
 }
