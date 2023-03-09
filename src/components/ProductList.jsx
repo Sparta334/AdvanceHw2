@@ -6,7 +6,7 @@ import { Content } from 'antd/es/layout/layout';
 export default function ProductList( {IMAGES} ){
 
     return(
-            <Content className="image__layout">
+            <div className="image__layout">
                     <Row  gutter={[8, 10]} justify="center" >
 
                         <Col xxl={24}>
@@ -44,7 +44,7 @@ export default function ProductList( {IMAGES} ){
 
                     </Row>
                 
-            </Content> 
+            </div> 
     );
 
 }
