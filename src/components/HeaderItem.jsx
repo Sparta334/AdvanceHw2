@@ -7,7 +7,7 @@ export default function HeaderItem( { Name , Slogan } ){
         
     <div className= "header">
 
-        <Row className="headerRow" gutter={[8, 0]} justify="center" align="middle">
+        <Row className="headerRow" gutter={[0, 0]} justify="center" align="middle">
             <Col xxl={24}>
 
             <Row center ="xxl" >
@@ -22,11 +22,11 @@ export default function HeaderItem( { Name , Slogan } ){
             </Row>
             </Col>
         </Row>
-        <Row gutter={[8,8]} justify="center" align="middle">
+        <Row gutter={[0,8]} justify="center" align="middle">
             <Col xxl={24}>
-            <Row center ="xxl" >
-            <h1 className="header__title">{Name}</h1>
-            </Row>
+                <Row center ="xxl" >
+                <h1 className="header__title">{Name}</h1>
+                </Row>
             </Col>
              <Col span={24}>
             <hr className="divider--light" />

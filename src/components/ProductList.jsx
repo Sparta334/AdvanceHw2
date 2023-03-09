@@ -1,7 +1,6 @@
 
 import products from '../Data/product.json'
 import {Row , Col} from "antd"
-import { Content } from 'antd/es/layout/layout';
 
 export default function ProductList( {IMAGES} ){
 

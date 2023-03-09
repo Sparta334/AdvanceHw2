@@ -6,7 +6,7 @@ export default function Article(){
     return(
         <Row className="description__layout">
             <Col xxl={24}>
-            <Row center ="xxl">
+            <Row className="description__Row" center ="xxl">
                 <Col span={24}>
                 <h1>DESCRIPTIONS</h1>
                 </Col>
