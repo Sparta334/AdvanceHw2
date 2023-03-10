@@ -22,7 +22,7 @@ function Home(){
 
             <Footer 
 
-                Adress="新北市新店區，接下來不跟你說，怕你來我家尋仇"
+                Adress="新北市新店區，有人抄我網頁，我就去你抄你家"
             
             />
         </div>
