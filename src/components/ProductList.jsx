@@ -8,7 +8,7 @@ export default function ProductList( {IMAGES} ){
             <div className="image__layout">
                     <Row  gutter={[8, 10]} justify="center" >
 
-                        <Col xxl={24}>
+                        <Col>
                             <h1 className="text-center">{IMAGES} </h1>
                         </Col>
                         <Col span={24}>

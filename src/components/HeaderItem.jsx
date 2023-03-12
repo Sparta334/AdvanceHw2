@@ -8,7 +8,7 @@ export default function HeaderItem( { Name , Slogan } ){
     <div className= "header">
 
         <Row className="headerRow" gutter={[0, 0]} justify="center" align="middle">
-            <Col xxl={24}>
+            <Col>
 
             <Row center ="xxl" >
             <Avatar className="header__Avatar" size={{
@@ -23,7 +23,7 @@ export default function HeaderItem( { Name , Slogan } ){
             </Col>
         </Row>
         <Row gutter={[0,8]} justify="center" align="middle">
-            <Col xxl={24}>
+            <Col>
                 <Row center ="xxl" >
                 <h1 className="header__title">{Name}</h1>
                 </Row>
