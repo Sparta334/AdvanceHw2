@@ -1,15 +1,16 @@
 
-import products from '../Data/product.json'
+import products from '../../Data/product.json'
 import {Row , Col} from "antd"
+import style from "./ProductList.module.css"
 
 export default function ProductList( {IMAGES} ){
 
     return(
-            <div className="image__layout">
+            <div className={style.image__layout}>
                     <Row  gutter={[8, 10]} justify="center" >
 
                         <Col>
-                            <h1 className="text-center">{IMAGES} </h1>
+                            <h1 className={style.text_center}>{IMAGES} </h1>
                         </Col>
                         <Col span={24}>
                             <hr className="divider--dark"/>
@@ -27,11 +28,11 @@ export default function ProductList( {IMAGES} ){
                                     xxl = {{span:4}}
                                 >
                                     
-                                    <div className="image">
-                                    <a href="" className="image__link">
-                                        <img src={product.image} alt="" className="image__style"/>
+                                    <div className={style.image}>
+                                    <a href="" className={style.image__link}>
+                                        <img src={product.image} alt="" className={style.image__style}/>
                                     </a>
-                                    <p className="image_title">{product.image_title}</p>
+                                    <p className={style.image_title}>{product.image_title}</p>
                                     </div>
                                 </Col>
                                 

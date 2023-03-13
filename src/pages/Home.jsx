@@ -1,7 +1,7 @@
-import HeaderItem from "../components/HeaderItem"
-import ProductList from "../components/ProductList";
-import Article from "../components/Article";
-import Footer from "../components/Footer";
+import HeaderItem from "../components/Header/HeaderItem"
+import ProductList from "../components/ProductList/ProductList";
+import Article from "../components/Article/Article";
+import Footer from "../components/Footer/Footer";
 import { Space } from "antd";
 
 function Home(){
