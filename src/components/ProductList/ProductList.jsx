@@ -1,9 +1,9 @@
 
-import products from '../../Data/product.json'
 import {Row , Col} from "antd"
+
 import style from "./ProductList.module.css"
 
-export default function ProductList( {IMAGES} ){
+export default function ProductList( {IMAGES , data} ){
 
     return(
             <div className={style.image__layout}>
@@ -19,7 +19,7 @@ export default function ProductList( {IMAGES} ){
                     <Row gutter={[8, 10]}>
 
                         {
-                            products.map( product=>
+                            data.map( product=>
                                 
                                 <Col key = { product.id } 
                                     sm = {{span:12}}
@@ -30,7 +30,7 @@ export default function ProductList( {IMAGES} ){
                                     
                                     <div className={style.image}>
                                     <a href="" className={style.image__link}>
-                                        <img src={product.image} alt="" className={style.image__style}/>
+                                        <img src={product.url} alt="" className={style.image__style}/>
                                     </a>
                                     <p className={style.image_title}>{product.image_title}</p>
                                     </div>

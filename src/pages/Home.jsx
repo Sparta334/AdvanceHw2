@@ -3,20 +3,39 @@ import ProductList from "../components/ProductList/ProductList";
 import Article from "../components/Article/Article";
 import Footer from "../components/Footer/Footer";
 import { Space } from "antd";
+import {LoadingOutlined} from "@ant-design/icons"
+import { useImage } from "../api/react-hook/hook";
 
 function Home(){
 
+
+    const {data , isLoading} = useImage();
+    const Recivce = data || [];
+
     return (
-       
         <div>
         <Space direction="vertical" size="large">
             <HeaderItem
                 Name="Ian"
                 Slogan="I am so handsome" 
             />
-            <ProductList
-                IMAGES="我沒去過的地方"
-            />
+
+
+            {
+                isLoading ? 
+                ( <LoadingOutlined/> ) 
+                
+                :
+                
+                ( <ProductList
+                    IMAGES="我沒去過的地方"
+                    data = {Recivce}
+                />
+                
+                )
+            }
+
+           
             <Article/>
         </Space>
 
@@ -26,7 +45,6 @@ function Home(){
             
             />
         </div>
-
         
 
     );
