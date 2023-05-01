@@ -23,9 +23,9 @@ export default function ProductList( {IMAGES , data} ){
                                 
                                 <Col key = { product.id } 
                                     sm = {{span:12}}
-                                    lg = {{span: 8}}
+                                    lg = {{span: 6}}
                                     xl = {{span :6}}
-                                    xxl = {{span:4}}
+                                    xxl = {{span:6}}
                                 >
                                     
                                     <div className={style.image}>
